@@ -1,9 +1,9 @@
 # DynamixelServoGimbal
 A custom design of 2 axes UAV gimbal (roll and pitch) by using Dynamixel XM430-W350-R servos and controlling the tilt angle from DJI LightBridge. The gimbal platform was specifically designed for FLIR Duo Pro camera, but it can be modified to other similar size of camera.
 
-<img src="image/gimbalplatform.JPG" width="400">
+![](image/gimbalplatform.JPG)
 
-<img src="image/gimbalplatform2.jpg" width="400">
+![](image/gimbalplatform2.jpg)
 
 # Hardware
 This project includes:
