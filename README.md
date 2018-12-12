@@ -24,16 +24,12 @@ You can find a wiring diagram down here.
 # How it works...
 Due to the Dynamixel servo has an SDK in Python, so this project we use a RPi as main controller to implement the control program. A RPi can communicate wtih Dynamixel servo using U2D2 usb conveter and interface with MPU6050 via i2c. To control the servo from LightBridge transmiiter, we use S2PW to convert DBUS signal to PWM signal for each channel and connect it to Arduino at pin 8 and 9. An Arduino sends serial data via usb to RPi and use in control program. On the LightBridge transmitter, it has 3 way switch which be used as mode selection 1. Horizontal view stabilizer (Default) 2. Stabilized Roll and manual tilt control 3. Holding tilt angle from 2 and stabilize both angle. Zoom and recording are controlled directly by sending PWM signal from transmitter to camera cable, don't need to pass an Arduino or RPI.
 
----
-
 ## TestReceiverInterrupt Arduino Sketch
 
 To read the PWM signal with efficient way and reduce time, I suggest to use interrupt to detect incoming pwm signal. This video from 
 Kamran Ahmad was well explained how to read pwm signal using interrupt in Arduino.
 https://www.youtube.com/watch?v=6rZ14KxvPsk&list=LL3Z_DCfdbL7I5nZqf8ezejQ&index=18&t=0s
 https://www.youtube.com/watch?v=IgYrztplkwU&list=LL3Z_DCfdbL7I5nZqf8ezejQ&index=17&t=0s
-
----
 
 ## 2AxesDynamixelServoGimbal Python Script
 
